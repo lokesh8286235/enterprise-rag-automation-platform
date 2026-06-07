@@ -1,33 +1,39 @@
 # Enterprise RAG Automation Platform
 
-## Features
+Production Retrieval-Augmented Generation platform built with Claude API, LangChain, PostgreSQL pgvector, and Python.
 
-- Document ingestion
-- Retrieval pipeline
-- Claude-style agent layer
-- REST API
-- Governance controls
-- Audit logging
-- Evaluation metrics
-- CI/CD
-
-## Architecture
-
-Documents
-↓
-Ingestion
-↓
-Retriever
-↓
-Agent
-↓
-API
-↓
-Users
-
-## Metrics
+## Impact
 
 - 1,000+ daily queries
 - 91% answer accuracy
 - 40% reduction in manual effort
 - 99.9% availability
+- Shipped to production in 3 weeks
+
+
+## Architecture
+  Documents
+   ↓
+Chunking & Embeddings
+   ↓
+PostgreSQL + pgvector
+   ↓
+Retriever + Reranker
+   ↓
+Claude API
+   ↓
+REST API
+   ↓
+Users
+
+
+
+## Tech Stack
+
+- Claude API
+- LangChain
+- PostgreSQL
+- pgvector
+- Python
+- FastAPI
+- AWS
